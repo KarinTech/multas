@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multas de Tránsito en Brasil 2023</title>
+</head>
+<body>
+    <h1>Multas de Tránsito en Brasil 2023</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Fecha</th>
+                <th>Día de la Semana</th>
+                <th>Horario</th>
+                <th>UF</th>
+                <th>BR</th>
+                <th>KM</th>
+                <th>Municipio</th>
+                <th>Causa del Accidente</th>
+                <th>Tipo de Accidente</th>
+                <th>Clasificación de Accidente</th>
+                <th>Fase del Día</th>
+                <th>Sentido de la Vía</th>
+                <th>Condición Meteorológica</th>
+                <th>Tipo de Pista</th>
+                <th>Trayectoria de la Vía</th>
+                <th>Uso del Suelo</th>
+                <th>Número de Personas</th>
+                <th>Muertos</th>
+                <th>Feridos Leves</th>
+                <th>Feridos Graves</th>
+                <th>Ilesos</th>
+                <th>Ignorados</th>
+                <th>Feridos</th>
+                <th>Vehículos</th>
+                <th>Latitud</th>
+                <th>Longitud</th>
+                <th>Regional</th>
+                <th>Delegacia</th>
+                <th>UOP</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for multa in multas %}
+            <tr>
+                <td>{{ multa.id }}</td>
+                <td>{{ multa.data_inversa }}</td>
+                <td>{{ multa.dia_semana }}</td>
+                <td>{{ multa.horario }}</td>
+                <td>{{ multa.uf }}</td>
+                <td>{{ multa.br }}</td>
+                <td>{{ multa.km }}</td>
+                <td>{{ multa.municipio }}</td>
+                <td>{{ multa.causa_acidente }}</td>
+                <td>{{ multa.tipo_acidente }}</td>
+                <td>{{ multa.classificacao_acidente }}</td>
+                <td>{{ multa.fase_dia }}</td>
+                <td>{{ multa.sentido_via }}</td>
+                <td>{{ multa.condicao_metereologica }}</td>
+                <td>{{ multa.tipo_pista }}</td>
+                <td>{{ multa.tracado_via }}</td>
+                <td>{{ multa.uso_solo }}</td>
+                <td>{{ multa.pessoas }}</td>
+                <td>{{ multa.mortos }}</td>
+                <td>{{ multa.feridos_leves }}</td>
+                <td>{{ multa.feridos_graves }}</td>
+                <td>{{ multa.ilesos }}</td>
+                <td>{{ multa.ignorados }}</td>
+                <td>{{ multa.feridos }}</td>
+                <td>{{ multa.veiculos }}</td>
+                <td>{{ multa.latitude }}</td>
+                <td>{{ multa.longitude}}</td>
